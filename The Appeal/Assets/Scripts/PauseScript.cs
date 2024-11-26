@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class PauseScript : MonoBehaviour
 {
-    GameObject pauseScreen;
+    public GameObject pauseScreen;
     private void Awake()
     {
-        pauseScreen = GameObject.Find("PauseScreen");
         pauseScreen.SetActive(false);
     }
     void Update()
