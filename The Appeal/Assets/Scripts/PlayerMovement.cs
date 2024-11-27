@@ -46,5 +46,9 @@ public class PlayerMovement : MonoBehaviour
             IsGrounded = true;
             Debug.Log("IsGrounded: " + IsGrounded);
         }
+        else if (collision.gameObject.tag == "JUMPBOOST")
+        {
+            jump = jump+150;
+        }
     }
 }
