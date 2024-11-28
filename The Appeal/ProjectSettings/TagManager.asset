@@ -12,6 +12,8 @@ TagManager:
   - JUMPBOOST
   - PLAYER
   - SPEEDBOOST
+  - DOUBLEJUMP
+  - ATTACKBOOST
   layers:
   - Default
   - TransparentFX

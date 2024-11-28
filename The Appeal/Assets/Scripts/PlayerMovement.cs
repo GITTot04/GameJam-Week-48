@@ -1,3 +1,4 @@
+
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,19 +11,23 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     public float jump = 250;
     public bool IsGrounded = false;
+    public bool doublejump = false;
+    public bool allowdoublejump;
     GameObject atkHitboxLeft;
     GameObject atkHitboxRight;
     bool canAttack = true;
     float timeSinceAtk;
     public float atkCD;
     bool facingDirection;
-    int hp = 3;
+    int hp;
+
 
     private void Awake()
     {
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
     }
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -48,10 +53,14 @@ public class PlayerMovement : MonoBehaviour
             gameObject.transform.Translate(new Vector3(x, 0, 0) * speed * Time.deltaTime);
 
             if (Input.GetButtonDown("Jump") && IsGrounded)
-            {
+        {   if(doublejump && allowdoublejump){
+            rb.AddForce(new Vector2(0, jump));
+            allowdoublejump = false;
+            } else if (doublejump && !allowdoublejump || !doublejump){
                 rb.AddForce(new Vector2(0, jump));
                 IsGrounded = false;
             }
+        }
         }
         if (!canAttack)
         {
@@ -69,6 +78,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+
+
+
+
+    
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "WIN")
@@ -76,21 +91,35 @@ public class PlayerMovement : MonoBehaviour
             WinScreen.SetActive(true);
             SceneManager.LoadScene(sceneName);
         }
+
         if (collision.gameObject.tag == "DEATH")
         {
             SceneManager.LoadScene(sceneName);
         }
+        
+        else if (collision.gameObject.tag == "GROUND")
+        {
+            IsGrounded = true;
+            allowdoublejump = true;
+        }
         else if (collision.gameObject.tag == "JUMPBOOST")
         {
-            jump = jump+150;
+            jump = jump+100;
         }
         else if (collision.gameObject.tag == "SPEEDBOOST")
         {
             speed = speed+3;
         }
-        else if (collision.gameObject.tag == "POINT")
+        else if (collision.gameObject.tag == "DOUBLEJUMP")
+        {
+            doublejump = true;
+            
+        }  else if (collision.gameObject.tag == "POINT")
         {
             Destroy(collision.gameObject);
+        }  else if (collision.gameObject.tag == "ATTACKBOOST")
+        {
+            Debug.Log("TBD attack boost value");
         }
 
         if (collision.gameObject.tag == "GROUND")
@@ -126,4 +155,6 @@ public class PlayerMovement : MonoBehaviour
         atkHitboxLeft.SetActive(false);
         atkHitboxRight.SetActive(false);
     }
-}
+    }
+
+
