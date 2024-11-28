@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     float timeSinceAtk;
     public float atkCD;
     bool facingDirection;
-    int hp;
+    int hp = 3;
 
     private void Awake()
     {

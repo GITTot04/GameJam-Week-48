@@ -108,7 +108,6 @@ public class BigBadBoss : MonoBehaviour
         if (collision.tag == "PlayerWeapon")
         {
             GameObject.Find("BossHealthManager").GetComponent<BossHealthManager>().TakeDamage(20);
-            Debug.Log("AV");
         }
     }
 }
