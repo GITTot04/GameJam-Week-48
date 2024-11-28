@@ -27,6 +27,10 @@ public class SubmitButtonScript : MonoBehaviour
             {
                 kingsAnswer.GetComponent<TextMeshProUGUI>().text = "HOW DARE YOU! IMMEDIATE DECAPITATION!!!";
             }
+            else if (appealText.GetComponent<TMP_InputField>().text.ToLower().Contains("league"))
+            {
+                kingsAnswer.GetComponent<TextMeshProUGUI>().text = "DEATH";
+            }
             else
             {
                 kingsAnswer.GetComponent<TextMeshProUGUI>().text = "Cool story bro... TO THE DUNGEON";
