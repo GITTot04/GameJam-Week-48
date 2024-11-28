@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 22041050}
   - component: {fileID: 22041049}
   - component: {fileID: 22041048}
-  - component: {fileID: 22041047}
   - component: {fileID: 22041051}
   m_Layer: 0
   m_Name: JumpBoostItem
