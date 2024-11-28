@@ -17,6 +17,11 @@ public class PlayerMovement : MonoBehaviour
     public float atkCD;
     bool facingDirection;
 
+    private void Awake()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = false;
+    }
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -70,9 +75,17 @@ public class PlayerMovement : MonoBehaviour
             WinScreen.SetActive(true);
             SceneManager.LoadScene(sceneName);
         }
-        else if (collision.gameObject.tag == "DEATH")
+        if (collision.gameObject.tag == "DEATH")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(sceneName);
+        }
+        else if (collision.gameObject.tag == "JUMPBOOST")
+        {
+            jump = jump+150;
+        }
+        else if (collision.gameObject.tag == "SPEEDBOOST")
+        {
+            speed = speed+3;
         }
         else if (collision.gameObject.tag == "POINT")
         {

@@ -8,6 +8,10 @@ TagManager:
   - Weapon
   - PlayerWeapon
   - EnemyWeapon
+  - DEATH
+  - JUMPBOOST
+  - PLAYER
+  - SPEEDBOOST
   layers:
   - Default
   - TransparentFX
