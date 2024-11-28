@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(new Vector2(0, jump));
             IsGrounded = false;
-            Debug.Log("Jump Triggered: " + IsGrounded);
+            
         }
     }
 
@@ -43,8 +43,11 @@ public class PlayerMovement : MonoBehaviour
         
         else if (collision.gameObject.tag == "GROUND")
         {
-            IsGrounded = true;
-            Debug.Log("IsGrounded: " + IsGrounded);
+            IsGrounded = true;     
+        }
+        else if (collision.gameObject.tag == "JUMPBOOST")
+        {
+            jump = jump+150;
         }
     }
 }
