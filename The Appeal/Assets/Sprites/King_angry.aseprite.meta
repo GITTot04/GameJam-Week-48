@@ -172,6 +172,7 @@ ScriptedImporter:
     cells:
     - name: King_angry_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 9
         y: 10
@@ -180,6 +181,7 @@ ScriptedImporter:
       spriteId: 8335a38b119e62e46bf6b8c059e2dcd1
     - name: King_angry_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 10
         y: 10
