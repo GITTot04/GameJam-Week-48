@@ -6,11 +6,13 @@ TagManager:
   tags:
   - GROUND
   - Weapon
+  - PlayerWeapon
+  - EnemyWeapon
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Detection Hitboxes
   - Water
   - UI
   - 

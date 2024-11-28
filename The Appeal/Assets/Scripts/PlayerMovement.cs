@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,21 +10,56 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     public float jump = 250;
     public bool IsGrounded = false;
+    GameObject atkHitboxLeft;
+    GameObject atkHitboxRight;
+    bool canAttack = true;
+    float timeSinceAtk;
+    public float atkCD;
+    bool facingDirection;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        atkHitboxLeft = transform.GetChild(0).gameObject;
+        atkHitboxRight = transform.GetChild(1).gameObject;
+        atkHitboxLeft.SetActive(false);
+        atkHitboxRight.SetActive(false);
     }
 
     void Update()
     {
-        float x = Input.GetAxisRaw("Horizontal");
-        gameObject.transform.Translate(new Vector3(x, 0, 0) * speed * Time.deltaTime);
-
-        if (Input.GetButtonDown("Jump") && IsGrounded)
+        if (canAttack)
         {
-            rb.AddForce(new Vector2(0, jump));
-            IsGrounded = false;
+            float x = Input.GetAxisRaw("Horizontal");
+            if (x == 1)
+            {
+                facingDirection = true;
+            }
+            else if (x == -1)
+            {
+                facingDirection = false;
+            }
+            gameObject.transform.Translate(new Vector3(x, 0, 0) * speed * Time.deltaTime);
+
+            if (Input.GetButtonDown("Jump") && IsGrounded)
+            {
+                rb.AddForce(new Vector2(0, jump));
+                IsGrounded = false;
+            }
+        }
+        if (!canAttack)
+        {
+            timeSinceAtk += Time.deltaTime;
+            if (timeSinceAtk >= atkCD)
+            {
+                canAttack = true;
+                timeSinceAtk = 0f;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.K) && canAttack)
+        {
+            StartCoroutine(Attack(facingDirection));
+            canAttack = false;
         }
     }
 
@@ -52,9 +88,24 @@ public class PlayerMovement : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Weapon")
+        if (collision.gameObject.tag == "EnemyWeapon")
         {
             Debug.Log("Av");
         }
+    }
+
+    IEnumerator Attack(bool attackDirection)
+    {
+        if (attackDirection)
+        {
+            atkHitboxRight.SetActive(true);
+        }
+        else
+        {
+            atkHitboxLeft.SetActive(true);
+        }
+        yield return new WaitForFixedUpdate();
+        atkHitboxLeft.SetActive(false);
+        atkHitboxRight.SetActive(false);
     }
 }

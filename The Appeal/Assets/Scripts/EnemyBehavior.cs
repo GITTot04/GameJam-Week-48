@@ -97,6 +97,10 @@ public class EnemyBehavior : MonoBehaviour
             player = collision.gameObject;
             isChasing = true;
         }
+        if (collision.tag == "PlayerWeapon")
+        {
+            Debug.Log("AV");
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
