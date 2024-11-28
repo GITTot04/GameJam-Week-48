@@ -50,5 +50,9 @@ public class PlayerMovement : MonoBehaviour
         {
             jump = jump+150;
         }
+        else if (collision.gameObject.tag == "SPEEDBOOST")
+        {
+            speed = speed+3;
+        }
     }
 }
