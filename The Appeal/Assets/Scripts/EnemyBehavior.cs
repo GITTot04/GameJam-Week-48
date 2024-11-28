@@ -20,6 +20,7 @@ public class EnemyBehavior : MonoBehaviour
     GameObject atkHitboxRight;
     public float atkCD;
     float timeSinceAtk;
+    int hp = 3;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -99,7 +100,11 @@ public class EnemyBehavior : MonoBehaviour
         }
         if (collision.tag == "PlayerWeapon")
         {
-            Debug.Log("AV");
+            hp -= 1;
+            if (hp <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)

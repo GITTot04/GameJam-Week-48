@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class BigBadBoss : MonoBehaviour
 {
@@ -65,7 +66,7 @@ public class BigBadBoss : MonoBehaviour
         speed = OldSpeed;  
     }
 
-    private System.Collections.IEnumerator AttackPlayer()
+    private IEnumerator AttackPlayer()
     {
         isAttacking = true;
         yield return new WaitForSeconds(attackDelay);
@@ -77,7 +78,7 @@ public class BigBadBoss : MonoBehaviour
         ResumeMovement();
     }
 
-    private System.Collections.IEnumerator FireProjectiles()
+    private IEnumerator FireProjectiles()
     {
         StopMovement();
 
@@ -100,6 +101,14 @@ public class BigBadBoss : MonoBehaviour
             rb.velocity = direction * 5f;
 
             Destroy(projectile, 5f);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "PlayerWeapon")
+        {
+            GameObject.Find("BossHealthManager").GetComponent<BossHealthManager>().TakeDamage(20);
+            Debug.Log("AV");
         }
     }
 }

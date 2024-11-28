@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     float timeSinceAtk;
     public float atkCD;
     bool facingDirection;
+    int hp;
 
     private void Awake()
     {
@@ -103,7 +104,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "EnemyWeapon")
         {
-            Debug.Log("Av");
+            hp -= 1;
+            if (hp <= 0)
+            {
+                SceneManager.LoadScene(0);
+            }
         }
     }
 
