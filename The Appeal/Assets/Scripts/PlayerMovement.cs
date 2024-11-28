@@ -88,18 +88,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "WIN")
-        {
-            WinScreen.SetActive(true);
-            SceneManager.LoadScene(sceneName);
-        }
-
-        if (collision.gameObject.tag == "DEATH")
-        {
-            SceneManager.LoadScene(sceneName);
-        }
-        
-        else if (collision.gameObject.tag == "GROUND")
+        if (collision.gameObject.tag == "GROUND")
         {
             IsGrounded = true;
             allowdoublejump = true;
@@ -144,6 +133,10 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.name == "BossTrigger")
         {
             SpawnBoss();
+        }
+        if (collision.gameObject.tag == "WIN")
+        {
+            SceneManager.LoadScene(2);
         }
     }
 

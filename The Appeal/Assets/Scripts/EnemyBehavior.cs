@@ -124,6 +124,7 @@ public class EnemyBehavior : MonoBehaviour
 
     IEnumerator Attack(bool attackDirection)
     {
+        yield return new WaitForSeconds(0.5f);
         if (attackDirection)
         {
             atkHitboxRight.SetActive(true);

@@ -14,6 +14,7 @@ TagManager:
   - SPEEDBOOST
   - DOUBLEJUMP
   - ATTACKBOOST
+  - WIN
   layers:
   - Default
   - TransparentFX
