@@ -212,7 +212,6 @@ ScriptedImporter:
     cells:
     - name: Simon_hurt_Frame_0
       frameIndex: 0
-      additiveSortOrder: 0
       cellRect:
         x: 21
         y: 7
@@ -221,7 +220,6 @@ ScriptedImporter:
       spriteId: f964e34e3abe23e4a8ed826454d523f0
     - name: Simon_hurt_Frame_1
       frameIndex: 1
-      additiveSortOrder: 0
       cellRect:
         x: 20
         y: 7
@@ -230,7 +228,6 @@ ScriptedImporter:
       spriteId: 07c1a5560ebed3648801d67d54d6ccf5
     - name: Simon_hurt_Frame_2
       frameIndex: 2
-      additiveSortOrder: 0
       cellRect:
         x: 20
         y: 7
@@ -239,7 +236,6 @@ ScriptedImporter:
       spriteId: a55e49bed553e0846bdb8ced1361ec10
     - name: Simon_hurt_Frame_3
       frameIndex: 3
-      additiveSortOrder: 0
       cellRect:
         x: 21
         y: 7

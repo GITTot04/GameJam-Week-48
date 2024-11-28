@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e8901e6714cce794cbea00ee5bbf7201
+guid: 89f5dfb71f6371242aacb27795d78ab5
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,138 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Guard_run_Frame_0
+  - name: Simon_idle_Frame_0
     originalName: 
-    pivot: {x: 0.6, y: -0.12962963}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 128
-      width: 45
-      height: 54
-    spriteID: 62401ddbc35abd54c9c177628186c561
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 128}
-  - name: Guard_run_Frame_1
-    originalName: 
-    pivot: {x: 0.6, y: -0.2916667}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 59
-      y: 181
-      width: 45
-      height: 48
-    spriteID: 673ba0ca09e909148a89fae008216f27
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 59, y: 181}
-  - name: Guard_run_Frame_2
-    originalName: 
-    pivot: {x: 0.58695656, y: -0.12962963}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 66
-      width: 46
-      height: 54
-    spriteID: cae7ef19bad85834ebf1881b94ecb63b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 66}
-  - name: Guard_run_Frame_3
-    originalName: 
-    pivot: {x: 0.6136364, y: -0.13207547}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 59
-      y: 4
-      width: 44
-      height: 53
-    spriteID: ded7a1efc29cd2f428d3c9a9665ccd76
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 59, y: 4}
-  - name: Guard_run_Frame_4
-    originalName: 
-    pivot: {x: 0.6136364, y: -0.12962963}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 190
-      width: 44
-      height: 54
-    spriteID: f234c6ede393dc74194a7815a3052e15
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 190}
-  - name: Guard_run_Frame_5
-    originalName: 
-    pivot: {x: 0.58695656, y: -0.31914893}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 59
-      y: 126
-      width: 46
-      height: 47
-    spriteID: 08b6a7b1c2bbead45a3842de0cb134bd
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 59, y: 126}
-  - name: Guard_run_Frame_6
-    originalName: 
-    pivot: {x: 0.5744681, y: -0.12962963}
+    pivot: {x: 0.64705884, y: -0.13725491}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 47
-      height: 54
-    spriteID: 1ca6488733285e84f8fc92194bb6a54f
+      width: 17
+      height: 51
+    spriteID: 47fcc8cf14ec1ca4290f6623e26b60c4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -261,18 +141,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Guard_run_Frame_7
+  - name: Simon_idle_Frame_1
     originalName: 
-    pivot: {x: 0.6136364, y: -0.13207547}
+    pivot: {x: 0.64705884, y: -0.13725491}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 59
-      y: 65
-      width: 44
-      height: 53
-    spriteID: dad792b86c5ce444e9ace4680369e648
+      x: 4
+      y: 63
+      width: 17
+      height: 51
+    spriteID: 37db0b61e6b76384fac64274995ad0c0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -280,80 +160,88 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 59, y: 65}
+    uvTransform: {x: 4, y: 63}
+  - name: Simon_idle_Frame_2
+    originalName: 
+    pivot: {x: 0.64705884, y: -0.13725491}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 4
+      width: 17
+      height: 51
+    spriteID: d1bf99f23c9c0504282bf9b4ff2b6e62
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 29, y: 4}
+  - name: Simon_idle_Frame_3
+    originalName: 
+    pivot: {x: 0.64705884, y: -0.13725491}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 63
+      width: 17
+      height: 51
+    spriteID: 522688b9b3467474b8129fc17023ac14
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 29, y: 63}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1166676985
-    name: Guard_run
+    guid: 1816367917
+    name: Simon_idle
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Guard_run_Frame_0
+    - name: Simon_idle_Frame_0
       frameIndex: 0
       cellRect:
-        x: 5
+        x: 21
         y: 7
-        width: 45
-        height: 54
-      spriteId: 62401ddbc35abd54c9c177628186c561
-    - name: Guard_run_Frame_1
+        width: 17
+        height: 51
+      spriteId: 47fcc8cf14ec1ca4290f6623e26b60c4
+    - name: Simon_idle_Frame_1
       frameIndex: 1
       cellRect:
-        x: 5
-        y: 14
-        width: 45
-        height: 48
-      spriteId: 673ba0ca09e909148a89fae008216f27
-    - name: Guard_run_Frame_2
+        x: 21
+        y: 7
+        width: 17
+        height: 51
+      spriteId: 37db0b61e6b76384fac64274995ad0c0
+    - name: Simon_idle_Frame_2
       frameIndex: 2
       cellRect:
-        x: 5
+        x: 21
         y: 7
-        width: 46
-        height: 54
-      spriteId: cae7ef19bad85834ebf1881b94ecb63b
-    - name: Guard_run_Frame_3
+        width: 17
+        height: 51
+      spriteId: d1bf99f23c9c0504282bf9b4ff2b6e62
+    - name: Simon_idle_Frame_3
       frameIndex: 3
       cellRect:
-        x: 5
+        x: 21
         y: 7
-        width: 44
-        height: 53
-      spriteId: ded7a1efc29cd2f428d3c9a9665ccd76
-    - name: Guard_run_Frame_4
-      frameIndex: 4
-      cellRect:
-        x: 5
-        y: 7
-        width: 44
-        height: 54
-      spriteId: f234c6ede393dc74194a7815a3052e15
-    - name: Guard_run_Frame_5
-      frameIndex: 5
-      cellRect:
-        x: 5
-        y: 15
-        width: 46
-        height: 47
-      spriteId: 08b6a7b1c2bbead45a3842de0cb134bd
-    - name: Guard_run_Frame_6
-      frameIndex: 6
-      cellRect:
-        x: 5
-        y: 7
-        width: 47
-        height: 54
-      spriteId: 1ca6488733285e84f8fc92194bb6a54f
-    - name: Guard_run_Frame_7
-      frameIndex: 7
-      cellRect:
-        x: 5
-        y: 7
-        width: 44
-        height: 53
-      spriteId: dad792b86c5ce444e9ace4680369e648
+        width: 17
+        height: 51
+      spriteId: 522688b9b3467474b8129fc17023ac14
     linkedCells: []
     parentIndex: -1
   platformSettings: []
