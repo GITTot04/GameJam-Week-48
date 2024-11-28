@@ -3,16 +3,12 @@ using UnityEngine;
 public class BossBehavior : MonoBehaviour
 {
     public Transform player; 
-    public float speed = 3f;  
-    public float attackRange = 2f;  
-
+    public float speed = 3f;
+    public float attackRange = 2f;
+    public Collider2D attackCollider; 
+    
     private void Update()
     {
-        if (player == null)
-        {
-            Debug.LogWarning("Player not assigned!");
-            return;
-        }
 
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
@@ -43,7 +39,17 @@ public class BossBehavior : MonoBehaviour
     {
         Debug.Log("Boss swings his sword!");
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("COLLISION");
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Player was hit by the boss!");
+        }
+    }
 }
+
 
 
 
