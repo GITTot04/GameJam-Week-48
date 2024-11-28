@@ -8,11 +8,13 @@ public class SubmitButtonScript : MonoBehaviour
     GameObject appealText;
     GameObject kingsAnswer;
     GameObject continueButton;
+    GameObject inputField;
     private void Awake()
     {
         appealText = GameObject.Find("AppealInput");
         kingsAnswer = GameObject.Find("KingsAnswer");
         continueButton = GameObject.Find("ContinueButton");
+        inputField = GameObject.Find("AppealInput");
         continueButton.SetActive(false);
     }
     public void SubmitAppeal()
@@ -41,5 +43,6 @@ public class SubmitButtonScript : MonoBehaviour
             kingsAnswer.GetComponent<TextMeshProUGUI>().text = "No APPEAL!?!? TO THE DUNGEON!";
         }
         continueButton.SetActive(true);
+        inputField.SetActive(false);
     }
 }
