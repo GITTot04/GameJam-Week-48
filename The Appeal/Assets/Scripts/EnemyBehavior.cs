@@ -44,7 +44,7 @@ public class EnemyBehavior : MonoBehaviour
             {
                 transform.Translate(moveLeft * speed * Time.deltaTime);
             }
-            if (tid >= 4f)
+            if (tid >= 6f)
             {
                 currentDirection = !currentDirection;
                 tid = 0f;

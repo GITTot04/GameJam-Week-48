@@ -11,6 +11,8 @@ public class SubmitButtonScript : MonoBehaviour
     GameObject inputField;
     private void Awake()
     {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
         appealText = GameObject.Find("AppealInput");
         kingsAnswer = GameObject.Find("KingsAnswer");
         continueButton = GameObject.Find("ContinueButton");
