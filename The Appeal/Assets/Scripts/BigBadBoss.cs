@@ -4,7 +4,7 @@ using System.Collections;
 public class BigBadBoss : MonoBehaviour
 {
     [Header("Movement Settings")]
-    public Transform player;
+    Transform player;
     public float speed = 3f;
     public float OldSpeed;
     public Collider2D attackCollider;
@@ -23,7 +23,10 @@ public class BigBadBoss : MonoBehaviour
     public float stopFireDuration = 3f;
     private float lastFireTime = -Mathf.Infinity;
 
-
+    private void Awake()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+    }
     void Start()
     {
         lastFireTime = Time.time;

@@ -19,7 +19,9 @@ public class PlayerMovement : MonoBehaviour
     float timeSinceAtk;
     public float atkCD;
     bool facingDirection;
-    int hp;
+    int hp = 3;
+    public GameObject boss;
+    public GameObject bossSpawnLocation;
 
 
     private void Awake()
@@ -139,6 +141,10 @@ public class PlayerMovement : MonoBehaviour
                 SceneManager.LoadScene(0);
             }
         }
+        if (collision.gameObject.name == "BossTrigger")
+        {
+            SpawnBoss();
+        }
     }
 
     IEnumerator Attack(bool attackDirection)
@@ -155,6 +161,10 @@ public class PlayerMovement : MonoBehaviour
         atkHitboxLeft.SetActive(false);
         atkHitboxRight.SetActive(false);
     }
+    public void SpawnBoss()
+    {
+        Instantiate(boss, bossSpawnLocation.transform);
     }
+}
 
 
