@@ -6,7 +6,19 @@ public class BossBehavior : MonoBehaviour
     public float speed = 3f;
     public float attackRange = 2f;
     public Collider2D attackCollider; 
+<<<<<<< Updated upstream
     
+=======
+
+    private void Start()
+    {
+        if (attackCollider == null)
+        {
+            Debug.LogWarning("Attack collider not assigned! Please add and assign a trigger collider.");
+        }
+    }
+
+>>>>>>> Stashed changes
     private void Update()
     {
 
@@ -40,6 +52,10 @@ public class BossBehavior : MonoBehaviour
         Debug.Log("Boss swings his sword!");
     }
 
+<<<<<<< Updated upstream
+=======
+    // Detect if the player enters the attack zone
+>>>>>>> Stashed changes
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("COLLISION");
