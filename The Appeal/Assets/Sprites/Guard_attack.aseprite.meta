@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0c8c077bf55d24945a7f3cb3328844ec
+guid: 8bec424ce0230df43ad95a0096ddb530
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Simon_idle-Sheet
+  - name: Guard_attack_Frame_0
     originalName: 
-    pivot: {x: 0.5119617, y: -0.13725491}
+    pivot: {x: 0.45454547, y: -0.11320755}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
-      width: 209
-      height: 51
-    spriteID: df2e590e5d993cc498e8da5c11882121
+      y: 65
+      width: 44
+      height: 53
+    spriteID: 28c9452e2979d0c4db4c9ffbfd374c73
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -140,29 +140,112 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -17, y: -3}
+    uvTransform: {x: 4, y: 65}
+  - name: Guard_attack_Frame_1
+    originalName: 
+    pivot: {x: 0.23809524, y: -0.11320755}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 65
+      width: 42
+      height: 53
+    spriteID: afb0e9a59980a0e42a9537271738667a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 65}
+  - name: Guard_attack_Frame_2
+    originalName: 
+    pivot: {x: 0.5925926, y: -0.11320755}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 54
+      height: 53
+    spriteID: 70830e2c52a95df42b7887c16947f91d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Guard_attack_Frame_3
+    originalName: 
+    pivot: {x: 0.52, y: -0.11320755}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 4
+      width: 50
+      height: 53
+    spriteID: 97293bca8ec2b5d459be9dc112166f15
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -391786865
-    name: Simon_idle-Sheet
+    guid: 523173056
+    name: Guard_attack
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Simon_idle-Sheet
+    - name: Guard_attack_Frame_0
       frameIndex: 0
-      additiveSortOrder: 0
+      cellRect:
+        x: 12
+        y: 6
+        width: 44
+        height: 53
+      spriteId: 28c9452e2979d0c4db4c9ffbfd374c73
+    - name: Guard_attack_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 22
+        y: 6
+        width: 42
+        height: 53
+      spriteId: afb0e9a59980a0e42a9537271738667a
+    - name: Guard_attack_Frame_2
+      frameIndex: 2
       cellRect:
         x: 0
-        y: 0
-        width: 256
-        height: 64
-      spriteId: df2e590e5d993cc498e8da5c11882121
+        y: 6
+        width: 54
+        height: 53
+      spriteId: 70830e2c52a95df42b7887c16947f91d
+    - name: Guard_attack_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 6
+        y: 6
+        width: 50
+        height: 53
+      spriteId: 97293bca8ec2b5d459be9dc112166f15
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 256, y: 64}
+  canvasSize: {x: 64, y: 64}
