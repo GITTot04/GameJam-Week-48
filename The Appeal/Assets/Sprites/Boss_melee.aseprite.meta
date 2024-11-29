@@ -232,6 +232,7 @@ ScriptedImporter:
     cells:
     - name: Boss_melee_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 18
         y: 7
@@ -240,6 +241,7 @@ ScriptedImporter:
       spriteId: 48a59d7e16a25ca4497245a813bd0d13
     - name: Boss_melee_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 25
         y: 7
@@ -248,6 +250,7 @@ ScriptedImporter:
       spriteId: 7b890d8a987973e48b693c1af07fd7c7
     - name: Boss_melee_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 17
         y: 7
@@ -256,6 +259,7 @@ ScriptedImporter:
       spriteId: 59385a07859097f4d96c4d69aa20e9f7
     - name: Boss_melee_Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 17
         y: 7
@@ -264,6 +268,7 @@ ScriptedImporter:
       spriteId: f701cc6c371e7c14787aa541528d6c95
     - name: Boss_melee_Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 17
         y: 7

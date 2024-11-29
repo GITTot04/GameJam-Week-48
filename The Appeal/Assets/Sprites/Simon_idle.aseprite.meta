@@ -212,6 +212,7 @@ ScriptedImporter:
     cells:
     - name: Simon_idle_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 21
         y: 7
@@ -220,6 +221,7 @@ ScriptedImporter:
       spriteId: 47fcc8cf14ec1ca4290f6623e26b60c4
     - name: Simon_idle_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 21
         y: 7
@@ -228,6 +230,7 @@ ScriptedImporter:
       spriteId: 37db0b61e6b76384fac64274995ad0c0
     - name: Simon_idle_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 21
         y: 7
@@ -236,6 +239,7 @@ ScriptedImporter:
       spriteId: d1bf99f23c9c0504282bf9b4ff2b6e62
     - name: Simon_idle_Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 21
         y: 7
