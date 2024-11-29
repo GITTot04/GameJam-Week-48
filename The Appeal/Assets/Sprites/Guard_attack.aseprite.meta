@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 65
       width: 44
       height: 53
-    spriteID: 0147e2f212b5e7648b3d1e97280e3f97
+    spriteID: 28c9452e2979d0c4db4c9ffbfd374c73
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 65
       width: 42
       height: 53
-    spriteID: 7766233e2aab5984892ec4653c21ce40
+    spriteID: afb0e9a59980a0e42a9537271738667a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 4
       width: 54
       height: 53
-    spriteID: 256828d404ad6ff4d9d29240c7512a40
+    spriteID: 70830e2c52a95df42b7887c16947f91d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 4
       width: 50
       height: 53
-    spriteID: 0a7598c85ed41f3408ef2d32316f19de
+    spriteID: 97293bca8ec2b5d459be9dc112166f15
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -218,7 +218,7 @@ ScriptedImporter:
         y: 6
         width: 44
         height: 53
-      spriteId: 00000000000000000000000000000000
+      spriteId: 28c9452e2979d0c4db4c9ffbfd374c73
     - name: Guard_attack_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -227,7 +227,7 @@ ScriptedImporter:
         y: 6
         width: 42
         height: 53
-      spriteId: 7766233e2aab5984892ec4653c21ce40
+      spriteId: afb0e9a59980a0e42a9537271738667a
     - name: Guard_attack_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -236,7 +236,7 @@ ScriptedImporter:
         y: 6
         width: 54
         height: 53
-      spriteId: 256828d404ad6ff4d9d29240c7512a40
+      spriteId: 70830e2c52a95df42b7887c16947f91d
     - name: Guard_attack_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -245,7 +245,7 @@ ScriptedImporter:
         y: 6
         width: 50
         height: 53
-      spriteId: 0a7598c85ed41f3408ef2d32316f19de
+      spriteId: 97293bca8ec2b5d459be9dc112166f15
     linkedCells: []
     parentIndex: -1
   platformSettings: []

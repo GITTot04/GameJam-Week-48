@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 62
       width: 45
       height: 48
-    spriteID: 2b1fa1bc737f8914db08563841a2b717
+    spriteID: 8335a38b119e62e46bf6b8c059e2dcd1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 4
       width: 44
       height: 50
-    spriteID: fcad0a520fd74cd4787f57781b404738
+    spriteID: d0f8746a8c969c949bc6c282c4302475
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -178,7 +178,7 @@ ScriptedImporter:
         y: 10
         width: 45
         height: 48
-      spriteId: 2b1fa1bc737f8914db08563841a2b717
+      spriteId: 8335a38b119e62e46bf6b8c059e2dcd1
     - name: King_angry_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -187,7 +187,7 @@ ScriptedImporter:
         y: 10
         width: 44
         height: 50
-      spriteId: fcad0a520fd74cd4787f57781b404738
+      spriteId: d0f8746a8c969c949bc6c282c4302475
     linkedCells: []
     parentIndex: -1
   platformSettings: []

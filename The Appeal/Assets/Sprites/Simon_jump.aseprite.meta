@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 16
       height: 52
-    spriteID: bf25be0077353c047bdf6471cdb5fada
+    spriteID: 5d3610ac51cdb6643ae2b200b4298fe9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 4
       width: 28
       height: 52
-    spriteID: 80d137f38c023da4aa764ddcff46b9a6
+    spriteID: ae42766d551c4b845bd1f0d3c96b2dd1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -178,7 +178,7 @@ ScriptedImporter:
         y: 6
         width: 16
         height: 52
-      spriteId: bf25be0077353c047bdf6471cdb5fada
+      spriteId: 5d3610ac51cdb6643ae2b200b4298fe9
     - name: Simon_jump_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -187,7 +187,7 @@ ScriptedImporter:
         y: 6
         width: 28
         height: 52
-      spriteId: 80d137f38c023da4aa764ddcff46b9a6
+      spriteId: ae42766d551c4b845bd1f0d3c96b2dd1
     linkedCells: []
     parentIndex: -1
   platformSettings: []

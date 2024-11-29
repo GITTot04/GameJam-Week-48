@@ -22,8 +22,6 @@ public class PlayerMovement : MonoBehaviour
     int hp = 3;
     public GameObject boss;
     public GameObject bossSpawnLocation;
-    private SpriteRenderer sr;
-    private Animator anim;
 
 
     private void Awake()
@@ -39,26 +37,13 @@ public class PlayerMovement : MonoBehaviour
         atkHitboxRight = transform.GetChild(1).gameObject;
         atkHitboxLeft.SetActive(false);
         atkHitboxRight.SetActive(false);
-        sr = gameObject.GetComponent<SpriteRenderer>();
-        anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-      
-
         if (canAttack)
         {
             float x = Input.GetAxisRaw("Horizontal");
-
-            if (x < 0)
-            {
-                sr.flipX = true;
-            }
-            if (x > 0)
-            {
-                sr.flipX = false;
-            }
             if (x == 1)
             {
                 facingDirection = true;
@@ -91,7 +76,6 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K) && canAttack)
         {
             StartCoroutine(Attack(facingDirection));
-
             canAttack = false;
         }
     }
@@ -105,12 +89,6 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "GROUND")
-        {
-            IsGrounded = true;
-            allowdoublejump = true;
-        }
-        
-        else if (collision.gameObject.tag == "GROUND")
         {
             IsGrounded = true;
             allowdoublejump = true;
@@ -164,7 +142,6 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator Attack(bool attackDirection)
     {
-        anim.SetBool("isAttacking", true);
         if (attackDirection)
         {
             atkHitboxRight.SetActive(true);
@@ -176,11 +153,6 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForFixedUpdate();
         atkHitboxLeft.SetActive(false);
         atkHitboxRight.SetActive(false);
-        anim.SetBool("isAttacking", false);
-    }
-    public void SpawnBoss()
-    {
-        Instantiate(boss, bossSpawnLocation.transform);
     }
     public void SpawnBoss()
     {
