@@ -1425,8 +1425,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1379626394}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 3
+        m_MethodName: ActivateNextScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1485,6 +1485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197903354ed450a4cb29224709812b87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  submitButton: {fileID: 1240870199}
 --- !u!1 &1472337428
 GameObject:
   m_ObjectHideFlags: 0
