@@ -1,9 +1,10 @@
 using UnityEngine;
+using System.Collections;
 
 public class BigBadBoss : MonoBehaviour
 {
     [Header("Movement Settings")]
-    public Transform player;
+    Transform player;
     public float speed = 3f;
     public float OldSpeed;
     public Collider2D attackCollider;
@@ -12,20 +13,28 @@ public class BigBadBoss : MonoBehaviour
     public float attackRange = 2f;
     public float attackDuration = 1f;
     public float attackDelay = 1f;
-    public float attackCooldown = 3f;  
+    public float attackCooldown = 3f;
     private bool isAttacking = false;
     private float lastAttackTime = -Mathf.Infinity;
 
     [Header("Projectile Settings")]
-    public GameObject projectilePrefab;  
-    public float fireInterval = 10f;    
+    public GameObject projectilePrefab;
+    public float fireInterval = 10f;
     public float stopFireDuration = 3f;
     private float lastFireTime = -Mathf.Infinity;
 
+    private SpriteRenderer sr;
+    private Animator anim;
 
+    private void Awake()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+    }
     void Start()
     {
         lastFireTime = Time.time;
+        sr = gameObject.GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -34,11 +43,13 @@ public class BigBadBoss : MonoBehaviour
         if (distanceToPlayer > attackRange)
         {
             MoveTowardsPlayer();
+            anim.SetBool("isRunning", true);
         }
-        else if (!isAttacking && Time.time >= lastAttackTime + attackCooldown) 
+        else if (!isAttacking && Time.time >= lastAttackTime + attackCooldown)
         {
             StopMovement();
             StartCoroutine(AttackPlayer());
+            anim.SetBool("isRunning", false);
         }
 
         if (Time.time >= lastFireTime + fireInterval)
@@ -57,16 +68,17 @@ public class BigBadBoss : MonoBehaviour
     private void StopMovement()
     {
         speed = OldSpeed;
-        speed = 0f;  
+        speed = 0f;
     }
 
     private void ResumeMovement()
     {
-        speed = OldSpeed;  
+        speed = OldSpeed;
     }
 
-    private System.Collections.IEnumerator AttackPlayer()
+    private IEnumerator AttackPlayer()
     {
+        anim.SetBool("isAttacking", true);
         isAttacking = true;
         yield return new WaitForSeconds(attackDelay);
         attackCollider.enabled = true;
@@ -74,20 +86,22 @@ public class BigBadBoss : MonoBehaviour
         yield return new WaitForSeconds(attackDuration);
         attackCollider.enabled = false;
         isAttacking = false;
+        anim.SetBool("isAttacking", false);
         ResumeMovement();
     }
 
-    private System.Collections.IEnumerator FireProjectiles()
+    private IEnumerator FireProjectiles()
     {
         StopMovement();
-
+        anim.SetBool("isRanging", true);
         FireProjectile(Vector3.left);
         FireProjectile(Vector3.right);
 
         yield return new WaitForSeconds(stopFireDuration);
-
+        anim.SetBool("isRanging", false);
         ResumeMovement();
     }
+
 
     private void FireProjectile(Vector3 direction)
     {
@@ -100,6 +114,13 @@ public class BigBadBoss : MonoBehaviour
             rb.velocity = direction * 5f;
 
             Destroy(projectile, 5f);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "PlayerWeapon")
+        {
+            GameObject.Find("BossHealthManager").GetComponent<BossHealthManager>().TakeDamage(20);
         }
     }
 }

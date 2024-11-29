@@ -13,6 +13,7 @@ public class PauseScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Cursor.visible = true;
             Time.timeScale = 0;
             pauseScreen.SetActive(true);
         }

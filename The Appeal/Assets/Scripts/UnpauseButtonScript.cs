@@ -13,5 +13,6 @@ public class UnpauseButtonScript : MonoBehaviour
     {
         Time.timeScale = 1;
         pauseScreen.SetActive(false);
+        Cursor.visible = false;
     }
 }

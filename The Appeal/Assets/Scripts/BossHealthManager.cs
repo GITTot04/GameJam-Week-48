@@ -25,14 +25,6 @@ public class BossHealthManager : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.K)) 
-        {
-            TakeDamage(20);
-        }
-    }
-
     public void TakeDamage(int damage)
     {
         healthAmount -= damage;
