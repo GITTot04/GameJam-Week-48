@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 63
       width: 17
       height: 51
-    spriteID: 1fcbc8f2283f2ab4d807f2b9e47e8b21
+    spriteID: ac506590b1c059a4da7f0ab001c95b62
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 63
       width: 18
       height: 51
-    spriteID: 182703d616410464cb28b5c126ef3eaf
+    spriteID: bda0af89c44901b43a2e81979435195c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 4
       width: 37
       height: 51
-    spriteID: dd7383f421c2dca4f8b9d1ee6cb5b95b
+    spriteID: e5a5f9f37dc96cf43b4d4ee015a7df5d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 4
       width: 30
       height: 51
-    spriteID: 83d1ee1df1627134594f5bee92087bbc
+    spriteID: 61d8f4bf545d7054d8a9c8cdff7412ac
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 4
       width: 24
       height: 51
-    spriteID: c1af959ead48a8e49a7b55052edd27f9
+    spriteID: 792789f9695913c44a2b659cb2f8d219
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -238,7 +238,7 @@ ScriptedImporter:
         y: 7
         width: 17
         height: 51
-      spriteId: 1fcbc8f2283f2ab4d807f2b9e47e8b21
+      spriteId: 00000000000000000000000000000000
     - name: Simon_attack_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -247,7 +247,7 @@ ScriptedImporter:
         y: 7
         width: 18
         height: 51
-      spriteId: 182703d616410464cb28b5c126ef3eaf
+      spriteId: bda0af89c44901b43a2e81979435195c
     - name: Simon_attack_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -256,7 +256,7 @@ ScriptedImporter:
         y: 7
         width: 37
         height: 51
-      spriteId: dd7383f421c2dca4f8b9d1ee6cb5b95b
+      spriteId: e5a5f9f37dc96cf43b4d4ee015a7df5d
     - name: Simon_attack_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -265,7 +265,7 @@ ScriptedImporter:
         y: 7
         width: 30
         height: 51
-      spriteId: 83d1ee1df1627134594f5bee92087bbc
+      spriteId: 61d8f4bf545d7054d8a9c8cdff7412ac
     - name: Simon_attack_Frame_4
       frameIndex: 4
       additiveSortOrder: 0
@@ -274,7 +274,7 @@ ScriptedImporter:
         y: 7
         width: 24
         height: 51
-      spriteId: c1af959ead48a8e49a7b55052edd27f9
+      spriteId: 792789f9695913c44a2b659cb2f8d219
     linkedCells: []
     parentIndex: -1
   platformSettings: []

@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 8
       height: 28
-    spriteID: 75ba84f7da775e04bb59c8e9913df1c2
+    spriteID: 70f116c3af0da4f4a96d819ef423867b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 40
       width: 8
       height: 28
-    spriteID: 53c3f0bf29f38f842afe444a891bc52b
+    spriteID: 6883972de32a37c44a7eee77bde39f64
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 42
       width: 9
       height: 29
-    spriteID: 0b7fab652d305104092f147f26ba6e99
+    spriteID: 74795510d05146b48a99829b6019b849
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 4
       width: 11
       height: 30
-    spriteID: b610e412011d8da4d878eb3354d1c23a
+    spriteID: b4a8b7502f86af646b9a3567312816ae
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 79
       width: 8
       height: 30
-    spriteID: aecdd13520e594340812f3665b29930e
+    spriteID: e505c9c0e62fc9842a5108b9d393def4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -238,7 +238,7 @@ ScriptedImporter:
         y: 2
         width: 8
         height: 28
-      spriteId: 75ba84f7da775e04bb59c8e9913df1c2
+      spriteId: 00000000000000000000000000000000
     - name: Torch Animation_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -247,7 +247,7 @@ ScriptedImporter:
         y: 2
         width: 8
         height: 28
-      spriteId: 53c3f0bf29f38f842afe444a891bc52b
+      spriteId: 6883972de32a37c44a7eee77bde39f64
     - name: Torch Animation_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -256,7 +256,7 @@ ScriptedImporter:
         y: 2
         width: 9
         height: 29
-      spriteId: 0b7fab652d305104092f147f26ba6e99
+      spriteId: 74795510d05146b48a99829b6019b849
     - name: Torch Animation_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -265,7 +265,7 @@ ScriptedImporter:
         y: 2
         width: 11
         height: 30
-      spriteId: b610e412011d8da4d878eb3354d1c23a
+      spriteId: b4a8b7502f86af646b9a3567312816ae
     - name: Torch Animation_Frame_4
       frameIndex: 4
       additiveSortOrder: 0
@@ -274,34 +274,10 @@ ScriptedImporter:
         y: 2
         width: 8
         height: 30
-      spriteId: aecdd13520e594340812f3665b29930e
+      spriteId: e505c9c0e62fc9842a5108b9d393def4
     linkedCells: []
     parentIndex: -1
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 

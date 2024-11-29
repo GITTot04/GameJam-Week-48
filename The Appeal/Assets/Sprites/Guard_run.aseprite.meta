@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 128
       width: 45
       height: 54
-    spriteID: 62401ddbc35abd54c9c177628186c561
+    spriteID: 67d959ae9f1371b4b826a7edf79cb617
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 181
       width: 45
       height: 48
-    spriteID: 673ba0ca09e909148a89fae008216f27
+    spriteID: cf8b8a6da345bc94a91f5362a89fa1f3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 66
       width: 46
       height: 54
-    spriteID: cae7ef19bad85834ebf1881b94ecb63b
+    spriteID: b04173612fb15644293c69ff0e608595
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 4
       width: 44
       height: 53
-    spriteID: ded7a1efc29cd2f428d3c9a9665ccd76
+    spriteID: 6a0a50b2778110348925b9e65f135ac9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 190
       width: 44
       height: 54
-    spriteID: f234c6ede393dc74194a7815a3052e15
+    spriteID: 387aaf64c8f0068468e655b9f2d17dfb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +232,7 @@ ScriptedImporter:
       y: 126
       width: 46
       height: 47
-    spriteID: 08b6a7b1c2bbead45a3842de0cb134bd
+    spriteID: 5df06131911ae1f4181f8efa1181c235
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -252,7 +252,7 @@ ScriptedImporter:
       y: 4
       width: 47
       height: 54
-    spriteID: 1ca6488733285e84f8fc92194bb6a54f
+    spriteID: b47fe160043e35f4f8adc5ae3f2f9c6b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -272,7 +272,7 @@ ScriptedImporter:
       y: 65
       width: 44
       height: 53
-    spriteID: dad792b86c5ce444e9ace4680369e648
+    spriteID: 0961df452732eb5419f4468585408828
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -298,7 +298,7 @@ ScriptedImporter:
         y: 7
         width: 45
         height: 54
-      spriteId: 62401ddbc35abd54c9c177628186c561
+      spriteId: 00000000000000000000000000000000
     - name: Guard_run_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -307,7 +307,7 @@ ScriptedImporter:
         y: 14
         width: 45
         height: 48
-      spriteId: 673ba0ca09e909148a89fae008216f27
+      spriteId: cf8b8a6da345bc94a91f5362a89fa1f3
     - name: Guard_run_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -316,7 +316,7 @@ ScriptedImporter:
         y: 7
         width: 46
         height: 54
-      spriteId: cae7ef19bad85834ebf1881b94ecb63b
+      spriteId: b04173612fb15644293c69ff0e608595
     - name: Guard_run_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -325,7 +325,7 @@ ScriptedImporter:
         y: 7
         width: 44
         height: 53
-      spriteId: ded7a1efc29cd2f428d3c9a9665ccd76
+      spriteId: 6a0a50b2778110348925b9e65f135ac9
     - name: Guard_run_Frame_4
       frameIndex: 4
       additiveSortOrder: 0
@@ -334,7 +334,7 @@ ScriptedImporter:
         y: 7
         width: 44
         height: 54
-      spriteId: f234c6ede393dc74194a7815a3052e15
+      spriteId: 387aaf64c8f0068468e655b9f2d17dfb
     - name: Guard_run_Frame_5
       frameIndex: 5
       additiveSortOrder: 0
@@ -343,7 +343,7 @@ ScriptedImporter:
         y: 15
         width: 46
         height: 47
-      spriteId: 08b6a7b1c2bbead45a3842de0cb134bd
+      spriteId: 5df06131911ae1f4181f8efa1181c235
     - name: Guard_run_Frame_6
       frameIndex: 6
       additiveSortOrder: 0
@@ -352,7 +352,7 @@ ScriptedImporter:
         y: 7
         width: 47
         height: 54
-      spriteId: 1ca6488733285e84f8fc92194bb6a54f
+      spriteId: b47fe160043e35f4f8adc5ae3f2f9c6b
     - name: Guard_run_Frame_7
       frameIndex: 7
       additiveSortOrder: 0
@@ -361,7 +361,7 @@ ScriptedImporter:
         y: 7
         width: 44
         height: 53
-      spriteId: dad792b86c5ce444e9ace4680369e648
+      spriteId: 0961df452732eb5419f4468585408828
     linkedCells: []
     parentIndex: -1
   platformSettings: []

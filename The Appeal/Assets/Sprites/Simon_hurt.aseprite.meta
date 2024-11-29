@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 17
       height: 51
-    spriteID: f964e34e3abe23e4a8ed826454d523f0
+    spriteID: 4d638444e4985bf4994816546ed70b34
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 4
       width: 19
       height: 51
-    spriteID: 07c1a5560ebed3648801d67d54d6ccf5
+    spriteID: d5c57d363d7349e43aa23cc11de3051b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 63
       width: 19
       height: 51
-    spriteID: a55e49bed553e0846bdb8ced1361ec10
+    spriteID: 20409079d8e86af438d2e45be5d1ec60
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 63
       width: 17
       height: 51
-    spriteID: 4933aefe1db77f9409c0934bcfaa4172
+    spriteID: 43e6208462177e7439423e951d18d48d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -218,7 +218,7 @@ ScriptedImporter:
         y: 7
         width: 17
         height: 51
-      spriteId: f964e34e3abe23e4a8ed826454d523f0
+      spriteId: 00000000000000000000000000000000
     - name: Simon_hurt_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -227,7 +227,7 @@ ScriptedImporter:
         y: 7
         width: 19
         height: 51
-      spriteId: 07c1a5560ebed3648801d67d54d6ccf5
+      spriteId: d5c57d363d7349e43aa23cc11de3051b
     - name: Simon_hurt_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -236,7 +236,7 @@ ScriptedImporter:
         y: 7
         width: 19
         height: 51
-      spriteId: a55e49bed553e0846bdb8ced1361ec10
+      spriteId: 20409079d8e86af438d2e45be5d1ec60
     - name: Simon_hurt_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -245,7 +245,7 @@ ScriptedImporter:
         y: 7
         width: 17
         height: 51
-      spriteId: 4933aefe1db77f9409c0934bcfaa4172
+      spriteId: 43e6208462177e7439423e951d18d48d
     linkedCells: []
     parentIndex: -1
   platformSettings: []

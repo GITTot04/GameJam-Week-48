@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 45
       height: 48
-    spriteID: 4a3e3ba02bf81e842abd6ac06f5b4134
+    spriteID: 663cacf90f568034b8a7db90d02e7bdc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 60
       width: 45
       height: 48
-    spriteID: 08d67b6ea4a1b66438277fe9e2228642
+    spriteID: 78f0c4d48d4bf6c4db8128c9458d4776
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -178,7 +178,7 @@ ScriptedImporter:
         y: 10
         width: 45
         height: 48
-      spriteId: 4a3e3ba02bf81e842abd6ac06f5b4134
+      spriteId: 00000000000000000000000000000000
     - name: King_happy_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -187,7 +187,7 @@ ScriptedImporter:
         y: 10
         width: 45
         height: 48
-      spriteId: 08d67b6ea4a1b66438277fe9e2228642
+      spriteId: 78f0c4d48d4bf6c4db8128c9458d4776
     linkedCells: []
     parentIndex: -1
   platformSettings: []
